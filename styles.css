@@ -1,0 +1,99 @@
+﻿body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+.row1
+{
+    background-color: darkgrey;
+}
+.row1:hover
+{
+    background-color: lightgrey;
+}
+.row1:active
+{
+    background-color: azure;
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+#display{
+    width: 600px;
+    height: 30px;
+    padding: 25px;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 25px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 120px;
+    height: 95px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+.title
+{
+    background-position: left;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+details {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: hsl(0,0%,45%);
+    transition: border-color 0.3s;
+    width: 300px;
+}
+
+/* Stilizarea când <details> este extins */
+details[open] {
+    border: 2px solid black; /* Chenar albastru */
+    padding: 10px;
+    background-color: hsl(0,0%,45%);
+}
+
+/* Stilizarea titlului <summary> */
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Derivate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fii-removebg-preview.png" >
+</head>
+<body>
+    <div class="title">
+        <h1>Calculator Derivate</h1>
+        <details>
+            <summary>INFO(codul trebuie modificat pentru functionarea cu un imput care contine numere negative)</summary>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salut,acesta este un calculator de derivate care iti deriveaza <strong>corect</strong>
+                majoritatea expresiilor matematice,este putin de reglat la functia putere('<strong>^</strong>').</p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunt folositii:
+                <ul>
+                    <li>operatorii aritmetici( + , - , * , / , ^ )</li>
+                    <li>functiile logaritm<br>('log' care este implicit in baza 2,si 'ln')</li>
+                    <li>functiile trigonometrice
+                        <ul>
+                            <li>sin</li>
+                            <li>cos</li>
+                            <li>tg</li>
+                            <li>ctg</li>
+                        </ul>
+                    </li>
+                    <li>functiile trigonometrice inverse
+                        <ul>
+                            <li>arcsin</li>
+                            <li>arccos</li>
+                            <li>arctg</li>
+                            <li>arcctg</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </p>
+            <p>
+                <a target="_blank" href="https://www.math.uaic.ro/~maticiuc/didactic/Derivate_Integrale.pdf">Reguli derivare</a>
+                (pag. 1 si 2 , fara 'sh' si 'ch')
+            </p>
+        </details>
+    </div>
+    <div id="calculator">
+            <label for="display"></label><input id="display" placeholder="Enter your expression">
+        <div id="keys">
+            <button class="btn row1" onclick="clearDisplay()"></button>
+            <button class="btn row1" onclick="clearDisplay()"></button>
+            <button class="btn row1" onclick="appendToDisplay(this)"></button>
+            <button onclick="deleteLastCharacter()" class="operator-btn btn changeButton">⌫</button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button onclick="appendToDisplay(this)" class="operator-btn btn">+</button>
+            <button class="btn"  onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button onclick="appendToDisplay(this)" class="operator-btn btn"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button onclick="appendToDisplay(this)" class="operator-btn btn"></button>
+            <button class="btn" onclick="changeButtonText()"></button>
+            <button class="btn" onclick="appendToDisplay(this)"></button>
+            <button onclick="appendToDisplay('/')" class="btn"></button>
+            <button class="operator-btn btn" onclick="calculate()"></button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
